@@ -1,0 +1,99 @@
+body {
+    background-color: #282828;
+    padding: 40px
+  }
+
+img {
+    width:  100%;
+}
+p, span{
+    font-family: 'Josefin Slab', serif;
+    color:#fff;
+    font-size: 5vw
+  }
+span {
+    font-weight: bold;
+    background-image: linear-gradient(
+        transparent 70%,
+        #8b0000 30%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: underline 2s forwards;
+}
+
+@keyframes underline {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+#path--positive{
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 0px;
+    animation-timing-function: linear;
+}
+
+#path--negative{
+    stroke-dasharray: 8px;
+    stroke-dashoffset: 0px;
+    animation-timing-function: linear;
+}
+
+@keyframes usebatterypos {
+    0% {
+        stroke: #ffffff;
+        stroke-dashoffset: 0px;       
+    }
+    50% {
+       stroke: #8b0000;
+    }
+    100% {
+        stroke: #ffffff;
+        stroke-dashoffset: 30px;       
+    }
+    
+}
+@keyframes usebatteryneg {
+    0% {
+        stroke: #ffffff;
+        stroke-dashoffset: 30px;       
+    }
+    50% {
+       stroke: #8b0000;
+    }
+    100% {
+        stroke: #ffffff;
+        stroke-dashoffset: 0px;       
+    }
+    
+}
+
+@keyframes loadbatterypos {
+    0% {
+        stroke: #ffffff;
+        stroke-dashoffset: 30px;       
+    }
+    50% {
+       stroke: #0baf00;
+    }
+    100% {
+        stroke: #ffffff;
+        stroke-dashoffset: 0px;       
+    }
+    
+}
+@keyframes loadbatteryneg {
+    0% {
+        stroke: #ffffff;
+        stroke-dashoffset: 0px;       
+    }
+    50% {
+       stroke: #0baf00;
+    }
+    100% {
+        stroke: #ffffff;
+        stroke-dashoffset: 30px;       
+    }
+    
+}
